@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Aim Training</h1>
+
+    <!-- Головне меню -->
+    <div id="menu">
+        <h2>Головне меню</h2>
+
+        <p>Оберіть складність:</p>
+        <select id="difficulty">
+            <option value="easy">Легко</option>
+            <option value="medium">Середньо</option>
+            <option value="hard">Складно</option>
+        </select>
+
+        <p>Рекорд: <span id="menuRecord">0</span></p>
+        <button id="start">Почати гру</button>
+    </div>
+
+    <!-- Гра -->
+    <div id="game" class="hidden">
+        <p>Час: <span id="time">30</span></p>
+        <p>Влучання: <span id="hits">0</span></p>
+
+        <div id="arena">
+            <div id="target"></div>
+        </div>
+    </div>
+
+    <!-- Результати -->
+    <div id="result" class="hidden">
+        <h2>Час вийшов!</h2>
+
+        <p>Влучання: <span id="finalHits">0</span></p>
+        <p>Рекорд: <span id="record">0</span></p>
+        <p id="message"></p>
+
+        <button id="home">Додому</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
